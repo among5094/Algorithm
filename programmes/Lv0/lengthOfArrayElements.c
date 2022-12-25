@@ -7,17 +7,20 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/120854
 
 // 파라미터로 주어지는 문자열은 const로 주어집니다.
-int* solution(const char* strlist[], size_t strlist_len)
-{ // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
+int* solution(const char* strlist[], size_t strlist_len) {
+    // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
 
-    
-    for(int i=0;i<strlist_len;i++)
-        if(strlist[i]=" ")
-            i++;
-
-    
-    return 0;//strlen(strlish[i]);
+    //int num;
+    int* answer = (int*)malloc(strlist_len*sizeof(int));
+    int arr[100]={0};
+    int k=0;
+    for(int i=0; i<strlist_len; i++)
+    {
+        answer[i]=strtok(answer," "); //첫번째 인자에는 짜를 문자열,  두번째 인자는 구분할 기준 넣기
+        arr[i]=strlen(answer[i]);
         
+    }
+    return arr;
 }
 
 /*
