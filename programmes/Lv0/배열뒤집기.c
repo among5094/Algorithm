@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-//문제: 
+//문제: 배열 뒤집기 (성공)
 //문제 출처:https://school.programmers.co.kr/learn/courses/30/lessons/120821
 
 // num_list_len: 배열 길이
