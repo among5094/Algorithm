@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h> //Header file for strlen
 
-//문제: 배열 원소의 길이
+//문제: 배열 원소의 길이(통과X)
 // https://school.programmers.co.kr/learn/courses/30/lessons/120854
 
 // 파라미터로 주어지는 문자열은 const로 주어집니다.

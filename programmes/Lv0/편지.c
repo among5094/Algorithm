@@ -11,7 +11,8 @@ int solution(const char* message)
 {
     int answer = 0; //변수 선언
     answer = strlen(message)*2;//strlen(message) :배열 message의 개수를 세어줌, 거기에 *2를 함
-
     return answer; 
 
 }
+//strlen에 대한 설명 링크:
+//https://dojang.io/mod/page/view.php?id=345
