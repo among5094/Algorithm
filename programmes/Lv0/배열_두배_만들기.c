@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-//문제: 배열 두배 만들기 
+//문제: 배열 두배 만들기 (성공)
 //문제 출처: https://school.programmers.co.kr/learn/courses/30/lessons/120809
 // numbers_len은 배열 numbers의 길이입니다.
 int* solution(int numbers[], size_t numbers_len) {
