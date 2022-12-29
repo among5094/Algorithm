@@ -28,6 +28,8 @@ int solution(int numbers[], size_t numbers_len)// numbers_len은 배열 길이입니다.
     int answer = 0;
     int i,j;
     int temp=0; //값을 임시적으로 저장할 변수
+    int len = sizeof(numbers)/sizeof(int); //1차원 배열은 분모가 int
+    //2차원 배열이 분모가 배열의 index0번째
     
     
     //오름차순으로 정리
