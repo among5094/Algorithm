@@ -24,11 +24,10 @@ int solution(int array[], size_t array_len)
             }//if
 
         }//for(k)
-
+        
     }//for(i) - >이 for문이 끝나면 배열은 오름차운으로 정렬된 상태
 
-
-    len=(array_len/2)+1; //중앙값
+    len=array_len/2; //중앙값
     answer=array[len];
     return answer;
 
