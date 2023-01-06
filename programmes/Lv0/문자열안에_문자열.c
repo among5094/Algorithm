@@ -20,7 +20,7 @@ int solution(const char* str1, const char* str2)
     int len=strlen(str1); //문자열 str1의 길이
     for(int i=0; i<len; i++) //str1이 끝나기 전까지 반복
     {
-        if(strstr(str1,str2) !=0) //s1안에서 s2를 찾았다면? (찾았다면 주소값을 반환하니까 0이 아닌 것이라고 뒀음)
+        if( strstr(str1,str2) !=0 ) //s1안에서 s2를 찾았다면? (찾았다면 주소값을 반환하니까 0이 아닌 것이라고 뒀음)
             return 1; //일치하면 리턴1
         else
             return 2;
