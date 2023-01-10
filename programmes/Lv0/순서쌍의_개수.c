@@ -11,8 +11,8 @@ int solution(int n)
     
     for(int i=1; i<=n; i++)
     {
-        if(i*(n-1-i) ==n )
-            answer++;
+        if( i%n==0 )
+                answer++;
         
     }
     return answer;
