@@ -13,18 +13,20 @@ char* solution(const char* my_string)
     char* answer = (char*)malloc(len); //동적 할당
     int index=0; 
 
+    //모음이 아닐 경우에만 answer의 배열에 문자열을 넣어줌
     for(int i=0; i<len; i++)
     {
-        if(my_string[i] != 'a' && my_string[i] != 'e' && my_string[i] != 'i' && my_string[i] != 'o' && my_string[i] != 'u')
+        if(my_string[i] != 'a' && my_string[i] != 'e' && my_string[i] != 'i' && my_string[i] != 'o' && my_string[i] != 'u')//모음이 아니면?
             answer[index++]=my_string[i];
     }
 
-    answer[index]='\0';
+    answer[index]='\0';//마지막 index에 문자열의 끝을 알리는 NULL 문자 넣어주기
     return answer;
 }
 
 
 
+// try 1 - 내가 한 것... 근데 못푸뮤ㅠ
 // 파라미터로 주어지는 문자열은 const로 주어집니다. 변경하려면 문자열을 복사해서 사용하세요.
 char* solution(const char* my_string)
 {
@@ -34,29 +36,16 @@ char* solution(const char* my_string)
     //for(int i=0; i<=len; i++){
 
     if(strchr(my_string, 'a') != NULL) //문자열 my_string에서 모음a가 찾아지면?
-    {
         answer=strtok('a', my_string);//문자열 my_string 에서 문자'a'를 분리하기 (토큰함수 사용)
-        while(answer != NULL)
-        {
-            answer=strchr(answer+1, 'a'); //포인터에 1더해서 a다음부터 검색
-        }
-    }    
+
+       
     else if(strchr(my_string, 'e') != NULL)
-    {
         answer=strtok('e', my_string);//문자열 my_string 에서 문자'a'를 분리하기 (토큰함수 사용)
-        while(answer != NULL)
-        {
-            answer=strchr(answer+1, 'e'); //포인터에 1더해서 a다음부터 검색
-        }
-    }
+
+    
     else if(strchr(my_string, 'i') != NULL)
-    {
         answer=strtok('i', my_string);//문자열 my_string 에서 문자'a'를 분리하기 (토큰함수 사용)
-        while(answer != NULL)
-        {
-            answer=strchr(answer+1, 'i'); //포인터에 1더해서 a다음부터 검색
-        }
-    }
+
     else if(strchr(my_string, 'o') != NULL)
     {
         answer=strtok('o', my_string);//문자열 my_string 에서 문자'a'를 분리하기 (토큰함수 사용)
