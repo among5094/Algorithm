@@ -35,4 +35,5 @@ char* solution(const char* rsp)
 계속 큰 따옴표를 써서 틀렸다. 
 작은 따옴표(' ')는 문자 하나를 쓸 때 사용하고, 
 큰 따옴표(" ")는 문자열을 쓸 때 사용해야한다.
+설명 링크: https://pro-pennek.tistory.com/entry/C%EC%96%B8%EC%96%B4-c%EC%99%80-s-%EC%9E%91%EC%9D%80%EB%94%B0%EC%98%B4%ED%91%9C%EC%99%80-%ED%81%B0%EB%94%B0%EC%98%B4%ED%91%9C
 */
