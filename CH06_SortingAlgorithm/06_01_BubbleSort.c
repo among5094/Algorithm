@@ -1,6 +1,6 @@
 #include <stdio.h>
 //작성 날짜: 23년도 11월 16일 목요일 
-//CH06-1강: 버블 정렬 알고리즘 
+//CH06-1강: 버블 정렬 알고리즘(배열을 미리 코딩해놔야 하는 버전)
 
 //bubbleSort함수는 배열과 그 크기를 인자로 받아 버블 정렬을 수행함.
 void bubbleSort(int arr[], int n) {
@@ -26,7 +26,7 @@ void bubbleSort(int arr[], int n) {
 }
 
 //printArray: 정렬된 배열을 출력함
-void printArray(int arr[], int size) {
+void printArray(int arr[], int size) { //size: arr의 개수
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
     printf("\n");
@@ -34,10 +34,21 @@ void printArray(int arr[], int size) {
 
 //테스트할 배열을 정의하고, bubbleSort 함수를 호출하여 배열을 정렬한 다음, 결과를 출력함.
 int main() {
+
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr)/sizeof(arr[0]); //인자의 개수
-    bubbleSort(arr, n); //배열과 배열의 개수를 입력받음.
-    printf("정렬된 배열: \n"); 
-    printArray(arr, n); //정렬된 결과 출력
+
+    //정렬 전 배열 출력
+    printf("정렬 전: \n");
+    for(int i=0; i<n; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+
+    //정렬 수행
+    bubbleSort(arr, n);
+
+    //정렬된 배열 출력
+    printf("정렬 후: \n"); 
+    printArray(arr, n);
     return 0;
 }
