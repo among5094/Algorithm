@@ -25,16 +25,17 @@ void printArray(int *arr, int size) {
 }
 
 
-
 int main() {
 
     //사용자로부터 배열의 크기 n을 입력받기
     int n;
-    printf("배열의 크기 입력: ");
+    printf("배열의 크기 입력:");
     scanf("%d", &n);
 
     //동적 메모리 할당
-    int *arr = (int*)malloc(n*sizeof(int)); //sizeof(int): int 자료형크기
+    int *arr; //stack 메모리 영역에 저장됨
+    *arr = (int*)malloc(n*sizeof(int)); //Heap 메모리 영역에 저장됨
+    //sizeof(int): int 자료형크기
     
     //동적 메모리 할당에 실패한다면?
     if (arr == NULL) {
@@ -44,10 +45,10 @@ int main() {
 
     //원하는 배열 입력받기
     printf("입력된 배열의 크기: %d\n", n);
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
-    }
 
+    //그냥 줄바꿈
     printf("\n");
 
     //정렬 전 배열 출력
